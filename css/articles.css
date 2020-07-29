@@ -1,6 +1,7 @@
 div.latest-articles {
 	display: flex;
 	flex-flow: column wrap;
+	height: 80vh;
 }
 
 div.article {

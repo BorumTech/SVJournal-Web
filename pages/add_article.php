@@ -1,12 +1,12 @@
-<?php 
+<?php
 $page_title = "Article Wizard - The Silicon Valley Journal";
 include('includes/header.html');
 
-include('../../../svj_connect.inc.php');
+include('../../svj_connect.inc.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (isset($_POST['title'])) {
 		$title = mysqli_real_escape_string($dbc, trim($_POST['title']));
-	} 
+	}
 
 	if (isset($_POST['body'])) {
 		$body = mysqli_real_escape_string($dbc, trim($_POST['body']));
@@ -27,6 +27,10 @@ echo "<form method = 'post' action = ''>";
 <p>
 	<label for = "title">Title: </label>
 	<input type = "text" name = "title" required id = "title">
+</p>
+<p>
+	<label for = "author">Author: </label>
+	<input type = "text" name = "author" id = "author">
 </p>
 <p>
 	<label for = "body">Body: </label><br>
