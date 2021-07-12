@@ -1,5 +1,5 @@
 ---
 deployment:
       tasks:
-        - export DEPLOYPATH=/home/libuc6kfb0jg/SiliconValleyJournal 
+        - export DEPLOYPATH=/home/libuc6kfb0jg/TheSiliconValleyJournal 
         - /bin/cp -r /home/libuc6kfb0jg/repositories/TheSiliconValleyJournal/SVJournal-Web $DEPLOYPATH  # Copy all recursively to $DEPLOYPATH
